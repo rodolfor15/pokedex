@@ -1,0 +1,31 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cccccc;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 1px -1px 21px 0px rgba(0,0,0,0.64);
+  -webkit-box-shadow: 1px -1px 21px 0px rgba(0,0,0,0.64);
+  -moz-box-shadow: 1px -1px 21px 0px rgba(0,0,0,0.64);
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+      max-width: 992px;
+      height: auto;
+      margin: 1rem auto;
+      border-radius: 1rem;
+      box-shadow: 1px -1px 21px 0px rgba(0,0,0,0.64);
+      -webkit-box-shadow: 1px -1px 21px 0px rgba(0,0,0,0.64);
+      -moz-box-shadow: 1px -1px 21px 0px rgba(0,0,0,0.64);
+  }
+}
+
