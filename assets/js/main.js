@@ -2,7 +2,7 @@ const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 let offset = 0
 const limit = 5
-const maxRecords = 11
+const maxRecords = 151
 
 function convertPokemnonTypesToLi(pokemonTypes){
   return pokemonTypes.map((typeSlot) => `<li class="type">${typeSlot.type.name}</li>`)
@@ -38,9 +38,9 @@ loadMoreButton.addEventListener('click', () =>{
   const qtdRecordsNextPage = offset + limit
 
   if (qtdRecordsNextPage >= maxRecords) {
-    const newLimt = qtdRecordsNextPage - maxRecords
-    loadPokemonItems(offset, newLimt)
-    loadMoreButton.parentElement.removeChild(loadMoreButton)
+      const newLimt = maxRecords - offset
+      loadPokemonItems(offset, newLimt)
+      loadMoreButton.parentElement.removeChild(loadMoreButton)
   }else
     loadPokemonItems(offset,limit)
  })
