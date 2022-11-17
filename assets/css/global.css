@@ -7,9 +7,10 @@ body {
   background-color: #cccccc;
 }
 
+
 .content {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   padding: 1rem;
   background-color: #fff;
   box-shadow: 1px -1px 21px 0px rgba(0,0,0,0.64);
